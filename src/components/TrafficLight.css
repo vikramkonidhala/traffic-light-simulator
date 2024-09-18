@@ -1,0 +1,67 @@
+.traffic-light{
+    width: 120px;
+    height: 310px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.light{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.red-light{
+    background-color: red;
+}
+
+.green-light{
+    background-color: darkgreen;
+}
+
+.yellow-light{
+    background-color: yellow;
+}
+
+.timer{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pedestrian-button, .emergency-button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.pedestrian-button{
+    background-color: #2882ef;
+    transition: background-color 0.3s ease;
+}
+
+.emergency-button{
+    background-color: #f56235;
+}
+
+button:hover{
+    border: 2px solid#fff;
+}

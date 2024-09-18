@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Traffic Light Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Traffic Light Simulator built using **React** with **useContext** for state management and timer-based light transitions. This project implements a traffic light system with three lights: Red, Yellow, and Green, with additional functionality for a pedestrian crossing button and an emergency override button.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Traffic Light System**:
+  - Lights follow the sequence: **Green (10s) -> Yellow (3s) -> Red (7s) -> Green**.
+  - Each light has a countdown timer showing the remaining seconds before switching to the next light.
+  
+- **Pedestrian Crossing**:
+  - A pedestrian crossing button requests the light to change to red, allowing pedestrians to cross safely.
+  - If the button is pressed while the light is green or yellow, the system waits for the current sequence to finish before switching to red.
+  - The red light stays on for an additional **5 seconds** after the standard red light duration to allow pedestrians to cross.
 
-### `npm start`
+- **Emergency Override**:
+  - An emergency override button can interrupt the normal light sequence to immediately turn the light red, allowing emergency vehicles to pass.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **State Management**:
+  - The project uses **React Context API** (`useContext`, `createContext`) for managing light state, pedestrian requests, and emergency overrides.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Timers**:
+  - **`setTimeout`** is used to manage the light transitions.
+  - **`setInterval`** is used to update the countdown timers for each light.
 
-### `npm test`
+## Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Live Demo](https://vikramkonidhala.github.io/traffic-light-simulator/)
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow these steps to get a local copy of the project up and running.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Node.js**: Make sure you have Node.js installed on your system. You can download it from [here](https://nodejs.org/).
+- **npm**: Node Package Manager (npm) is installed with Node.js.
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   git clone https://github.com/vikramkonidhala/traffic-light-simulator.git
+   cd traffic-light-simulator
