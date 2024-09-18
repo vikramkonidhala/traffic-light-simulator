@@ -25,7 +25,7 @@ A Traffic Light Simulator built using **React** with **useContext** for state ma
 
 ## Demo
 
-[Live Demo](https://vikramkonidhala.github.io/traffic-light-simulator/)
+[Live Demo](https://tarffic-simulator-vikram.netlify.app/)
 
 ## Getting Started
 
