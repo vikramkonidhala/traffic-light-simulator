@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://vikramkonidhala.github.io/traffic-light-simulator/",
+  "author": {
+    "name": "Vikram Konidhala",
+    "url": "https://github.com/vikramkonidhala"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
